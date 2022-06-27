@@ -5,7 +5,15 @@
 
     <uses-feature android:name="android.hardware.usb.host" />
 
+    <uses-permission android:name="android.permission.NFC" />
+
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="true" />
+
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <uses-permission
         android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
         tools:ignore="ScopedStorage" />
@@ -13,8 +21,12 @@
     <uses-permission
         android:name="android.permission.WRITE_EXTERNAL_STORAGE"
         tools:ignore="ScopedStorage" /> <!-- 加入在U盘中写入数据的权限 -->
+    <uses-feature android:name="android.hardware.camera" /> <!-- 设置允许拍照的权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.hardware.camera.autofocus" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- 允许程序访问有关GSM网络信息 -->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:name="com.hgy.MyApp"
@@ -22,13 +34,13 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:requestLegacyExternalStorage="true"
         android:theme="@style/Theme.AppTool"
         tools:targetApi="n">
         <activity
-            android:name="com.hgy.aty.SplashAty"
+            android:name=".SplashAty"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -36,12 +48,30 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name="com.hgy.aty.MainActivity" />
-        <activity android:name="com.hgy.aty.HkDataSynAty" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".HkDataSynAty" />
         <activity android:name=".JsonTestAty" />
+        <activity android:name=".TestGatewayAty" />
+        <activity android:name=".TestSkmAty" />
+<!--        <activity android:name=".TestNfcReadAty">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.nfc.action.TECH_DISCOVERED" />-->
+<!--            </intent-filter>-->
+<!--            <meta-data-->
+<!--                android:name="android.nfc.action.TECH_DISCOVERED"-->
+<!--                android:resource="@xml/nfc_tech_filter" />-->
+<!--        </activity>-->
+        <activity android:name=".TestQrCodeAty" />
+        <activity android:name=".TestDBNfcAty" />
+        <activity android:name=".KeyTestActivity" />
+        <activity android:name=".TestYctAty" />
+        <activity android:name=".TestTabAty" />
 
         <service android:name="com.hgy.server.AndWebServer" />
+
+        <meta-data
+            android:name="ScopedStorage"
+            android:value="true" />
     </application>
 
 </manifest>

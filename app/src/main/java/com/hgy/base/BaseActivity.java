@@ -23,13 +23,14 @@ import com.hgy.aty.R;
 import com.hgy.view.BamToast;
 import com.tecsun.network.utils.ActivityStackManager;
 import com.tecsun.network.utils.LogUntil;
+import com.trello.rxlifecycle.components.support.RxAppCompatActivity;
 import com.zyao89.view.zloading.ZLoadingDialog;
 import com.zyao89.view.zloading.Z_TYPE;
 
 /**
  * Created by hgy on 17/11/3.
  */
-public abstract class BaseActivity extends AppCompatActivity {
+public abstract class BaseActivity extends RxAppCompatActivity {
 
     private ZLoadingDialog dialog;
 

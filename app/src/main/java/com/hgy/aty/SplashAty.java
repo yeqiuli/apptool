@@ -158,7 +158,7 @@ public class SplashAty extends BaseActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        stopService(new Intent(MyApp.getInstances(), AndWebServer.class));
+//        stopService(new Intent(MyApp.getInstances(), AndWebServer.class));
     }
 
 

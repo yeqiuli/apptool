@@ -7,15 +7,22 @@ import com.hgy.aty.BuildConfig;
 import com.hgy.net.FakeX509TrustManager;
 import com.hgy.tool.KeyboardVisibilityObserver;
 import com.hgy.tool.SPUtil;
+import com.tecsun.devgateway.net.TokenInterceptor;
+import com.tecsun.network.network.FileHttpLoggingInterceptor;
+import com.tecsun.network.network.InterceptorCallBack;
 import com.tecsun.network.network.RetrofitManager;
 import com.tencent.bugly.crashreport.CrashReport;
 
 import java.security.SecureRandom;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.net.ssl.SSLContext;
 import javax.net.ssl.SSLSocketFactory;
 import javax.net.ssl.TrustManager;
 import javax.net.ssl.X509TrustManager;
+
+import okhttp3.Interceptor;
 
 public class MyApp extends Application {
     private static MyApp myApplication;
@@ -60,6 +67,13 @@ public class MyApp extends Application {
             RetrofitManager.get()
                     .setFactory(sslSocketFactory)
                     .setVerifier((hostname, session) -> true)
+                    .setHttpCallback(log -> {
+                    })
+                    .setCallBackInterceptor(() -> {
+                        List<Interceptor> interceptors = new ArrayList<>();
+                        interceptors.add(new TokenInterceptor());
+                        return interceptors;
+                    })
                     .setTrustManager(trustManager)
                     .setDebug(BuildConfig.DEBUG)
                     .initOkHttpClient();

@@ -9,6 +9,7 @@ import com.tecsun.network.utils.LogUntil;
 import com.yanzhenjie.andserver.annotation.CrossOrigin;
 import com.yanzhenjie.andserver.annotation.GetMapping;
 import com.yanzhenjie.andserver.annotation.PostMapping;
+import com.yanzhenjie.andserver.annotation.RequestBody;
 import com.yanzhenjie.andserver.annotation.RequestMapping;
 import com.yanzhenjie.andserver.annotation.RequestParam;
 import com.yanzhenjie.andserver.annotation.RestController;
@@ -23,6 +24,7 @@ import com.yanzhenjie.andserver.util.MediaType;
 public class DevicesController {
 
     public static final String result = "{\"result\":1,\"success\":ture}";
+
     /**
      * 1、设备重启
      *
@@ -39,8 +41,6 @@ public class DevicesController {
     public String getDevID() {
         return getAndBean(ErrCode.SUCCESS, "获取成功设备序列号成功", new JsonObject(), true);
     }
-
-
 
 
     /**
@@ -79,6 +79,40 @@ public class DevicesController {
             LogUntil.e("deviceKey" + deviceKey);
             LogUntil.e("personId" + personId);
             LogUntil.e(data);
+            return result;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return e.getMessage();
+        }
+    }
+
+
+    /**
+     * 1、 数据接收
+     *
+     * @return result
+     */
+    @PostMapping(path = "/u2/up", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+    public String testU2(@RequestBody String data) {
+        try {
+            LogUntil.e("deviceKey" + data);
+            LogUntil.e(data);
+            return result;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return e.getMessage();
+        }
+    }
+
+    /**
+     * 1、 数据接收
+     *
+     * @return result
+     */
+    @GetMapping(path = "/u2/up/get", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+    public String getTest() {
+        try {
+
             return result;
         } catch (Exception e) {
             e.printStackTrace();
