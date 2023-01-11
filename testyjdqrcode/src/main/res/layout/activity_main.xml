@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/allowscan_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="系统触发扫码" />
+
+        <Button
+            android:id="@+id/stopsystemscan_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:text="系统不触发扫码" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/allowe_dropdown_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="打开状态栏下拉" />
+
+        <Button
+            android:id="@+id/notallowe_dropdown_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:text="关闭状态栏下拉" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/open_scankey_report"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="打开上报扫码按键" />
+
+        <Button
+            android:id="@+id/close_scankey_report"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:text="关闭上报扫码按键" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/ctpkey_open_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="打开触摸屏按键" />
+
+        <Button
+            android:id="@+id/ctpkey_close_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:text="关闭触摸屏按键" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/softscan_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="软件触发扫码"
+
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/takeir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="软件触发测温" />
+    </LinearLayout>
+
+
+</LinearLayout>

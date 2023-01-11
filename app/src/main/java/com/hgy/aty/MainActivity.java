@@ -25,6 +25,7 @@ public class MainActivity extends BaseActivity {
         findViewById(R.id.tv8).setOnClickListener(v -> startActivity(new Intent(MainActivity.this, KeyTestActivity.class)));
         findViewById(R.id.tv9).setOnClickListener(v -> startActivity(new Intent(MainActivity.this, TestYctAty.class)));
         findViewById(R.id.tv10).setOnClickListener(v -> startActivity(new Intent(MainActivity.this, TestTabAty.class)));
+        findViewById(R.id.tv11).setOnClickListener(v -> startActivity(new Intent(MainActivity.this, XaNetIDAty.class)));
     }
 
     @Override

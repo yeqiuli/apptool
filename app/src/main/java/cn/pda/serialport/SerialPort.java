@@ -15,8 +15,8 @@ public class SerialPort {
 
     private static final String TAG = "SerialPort";
 
-    public static int TNCOM_EVENPARITY = 0;//Å¼Ğ£Ñé
-    public static int TNCOM_ODDPARITY = 1;//ÆæĞ£Ñé
+    public static int TNCOM_EVENPARITY = 0;//å¶æ ¡éªŒ
+    public static int TNCOM_ODDPARITY = 1;//å¥‡æ ¡éªŒ
 
     /*
      * Do not remove or rename the field mFd: it is used by native method close();
@@ -27,7 +27,7 @@ public class SerialPort {
     private boolean trig_on = false;
     byte[] test;
 
-    //ÓÃÓÚµ÷ÓÃGPIO
+    //ç”¨äºè°ƒç”¨GPIO
     public SerialPort() {
     }
 
@@ -158,7 +158,7 @@ public class SerialPort {
     public native void setGPIOlow(int gpio);
 
 
-//	public native void setPortParity(int mode); //ÉèÖÃĞ£ÑéÎ»
+//	public native void setPortParity(int mode); //è®¾ç½®æ ¡éªŒä½
 
     public native void test(byte[] bytes);
 

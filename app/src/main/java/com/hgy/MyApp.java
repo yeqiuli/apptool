@@ -6,6 +6,7 @@ import android.app.Application;
 import com.hgy.aty.BuildConfig;
 import com.hgy.net.FakeX509TrustManager;
 import com.hgy.tool.KeyboardVisibilityObserver;
+import com.hgy.tool.MyFileUtil;
 import com.hgy.tool.SPUtil;
 import com.tecsun.devgateway.net.TokenInterceptor;
 import com.tecsun.network.network.FileHttpLoggingInterceptor;
@@ -67,7 +68,8 @@ public class MyApp extends Application {
             RetrofitManager.get()
                     .setFactory(sslSocketFactory)
                     .setVerifier((hostname, session) -> true)
-                    .setHttpCallback(log -> {
+                    .setHttpCallback((log, url, type) -> {
+                        MyFileUtil.saveLog("url:" + url + "\nlog:" + log + "\ntype:" + type);
                     })
                     .setCallBackInterceptor(() -> {
                         List<Interceptor> interceptors = new ArrayList<>();

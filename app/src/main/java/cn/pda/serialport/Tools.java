@@ -3,7 +3,7 @@ package cn.pda.serialport;
 
 public class Tools {
 
-    //byte ×ªÊ®Áù½øÖÆ
+    //byte è½¬åå…­è¿›åˆ¶
     public static String Bytes2HexString(byte[] b, int size) {
         String ret = "";
         for (int i = 0; i < size; i++) {
@@ -24,7 +24,7 @@ public class Tools {
         return ret;
     }
 
-    //Ê®Áù½øÖÆ×ªbyte
+    //åå…­è¿›åˆ¶è½¬byte
     public static byte[] HexString2Bytes(String src) {
         int len = src.length() / 2;
         byte[] ret = new byte[len];
@@ -36,7 +36,7 @@ public class Tools {
         return ret;
     }
 
-    /* byte[]×ªInt */
+    /* byte[]è½¬Int */
     public static int bytesToInt(byte[] bytes) {
         int addr = bytes[0] & 0xFF;
         addr |= ((bytes[1] << 8) & 0xFF00);
@@ -46,7 +46,7 @@ public class Tools {
 
     }
 
-    /* Int×ªbyte[] */
+    /* Intè½¬byte[] */
     public static byte[] intToByte(int i) {
         byte[] abyte0 = new byte[4];
         abyte0[0] = (byte) (0xff & i);

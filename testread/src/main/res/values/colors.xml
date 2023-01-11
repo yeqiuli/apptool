@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="menu_other">#78044BD0</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#2196F3</color>
+
+    <color name="button_color">#317EFD</color>
+    <color name="button_color_down">#83B2FE</color>
+    <color name="colorTranslucent3">#00000000</color><!--半透明-->
+    <color name="colorAccent2">#e4155b</color>
+    <!--深蓝-->
+    <color name="color_deep_blue">#0168B7</color>
+    <!-- 蓝色 -->
+    <color name="color_blue">#2095F2</color>
+    <color name="color_bluet">#37eafb</color>
+
+    <!--深蓝-->
+    <color name="color_bluess">#0168B7</color>
+    <color name="color_bluessaa">#03132b</color>
+    <!-- 浅蓝色 -->
+    <color name="color_blue_b">#2E87BE</color>
+    <!-- 白色 -->
+    <color name="color_white">#ffffff</color>
+    <!--灰白-->
+    <color name="color_lvbj">#F0F0F0</color>
+    <!-- 80 透明度 蓝色 -->
+    <color name="color_trans_lvbj">#2E87BE</color>
+    <!--绿色-->
+    <color name="green">#008000</color>
+    <!-- 主色 -->
+
+
+    <color name="color_bgColor">#F8F8F8</color>
+    <color name="color_gray">#8a8a8a</color>
+    <color name="color_grayl">#dfdfdf</color>
+    <color name="color_grayl2">#c2baba</color>
+
+    <color name="color_black">#000000</color>
+    <color name="color_orange">#f3b202</color>
+
+    <color name="color_moretl">#0049A2</color>
+    <color name="color_tl">#902095F2</color>
+
+    <color name="gray_white">#ffcccccc</color>
+    <color name="record">#3a3946</color>
+    <color name="recordto">#03132b</color>
+    <color name="color_red">#BF4155</color>
+
+    <color name="color_people">#2B3770</color>
+    <color name="color_people_line">#485ABD</color>
+    <color name="color_text">#00FFFF</color>
+    <color name="color_text1">#1EB1D7</color>
+    <color name="color_bg">#021148</color>
+    <color name="color_header">#01092D</color>
+    <color name="color_btn">#0081FF</color>
+    <color name="color_time">#0075EA</color>
+    <color name="colorTranslucent1">#00FFFFFF</color><!--半透明-->
+    <color name="record2">#b9b8c6</color>
+    <color name="color_status">#0D1959</color>
+    <color name="color_top">#010B30</color>
+    <color name="color_version">#86D6F7</color>
+    <color name="color_line">#2C68BE</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#B0000000</color>
+    <color name="result_point_color">#C0FFFF00</color>
+    <color name="viewfinder_frame">#90FFFFFF</color>
+
+    <color name="colorTranslucent">#80000000</color><!--半透明-->
+    <color name="colorTranslucent2">#40000000</color><!--半透明-->
+
+    <color name="green1">#4A935A</color>
+    <color name="color_red1">#D94226</color>
+    <color name="color_yellow">#F6C142</color>
+    <color name="color_home_text">#00FFFF</color>
+    <color name="color_privacy_bg">#F2F2F2</color>
+    <color name="yellow">#FDB321</color>
+    <color name="red">#FF0033</color><!--猩红-->
+
+</resources>

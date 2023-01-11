@@ -12,6 +12,9 @@ import static org.junit.Assert.*;
 public class ExampleUnitTest {
     @Test
     public void addition_isCorrect() {
-        assertEquals(4, 2 + 2);
+        boolean flag = IDCardCheck.idIsOk("440102200204242316");
+        boolean flag1 = IDCardCheck.idIsOk("532522199201152417");
+        System.out.println("身份证状态：" + flag);
+        System.out.println("身份证状态1：" + flag1);
     }
 }

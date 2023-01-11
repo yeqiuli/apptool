@@ -62,6 +62,19 @@ public class MyTimeUtil {
         return datetimeFormat.format(date);
     }
 
+
+    /**
+     * 获取系统时间
+     * 日期时间格式yyyy-MM-dd
+     *
+     * @param date
+     * @return
+     */
+    public static String formatTimeName(Date date) {
+        SimpleDateFormat datetimeFormat = new SimpleDateFormat("HHmmss");
+        return datetimeFormat.format(date);
+    }
+
     /**
      * 获取系统时间
      * 时间格式 HH:mm:ss

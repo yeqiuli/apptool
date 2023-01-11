@@ -52,7 +52,7 @@ public class QrCodeUtil {
         Observable.just(port)
                 .map(r -> {
                     try {
-                        mSerialPort = new SerialPort(new File(r), 115200, 0);
+                        mSerialPort = new SerialPort(new File(r), 9600, 0);
                         outputStream = mSerialPort.getOutputStream();
                         return 0;
                     } catch (Exception e) {

@@ -4,7 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Toast;
 
-import com.google.zxing.activity.CaptureActivity;
+import com.qrcode.zxing.activity.CaptureActivity;
 import com.tecsun.devgateway.CheckDevAty;
 import com.tecsun.devgateway.bean.AiTokenBean;
 import com.tecsun.devgateway.net.AiPlatformUtil;
